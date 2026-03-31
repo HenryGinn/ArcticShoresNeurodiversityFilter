@@ -1,0 +1,44 @@
+\documentclass[hidelinks, 11 pt]{article}
+
+\usepackage[a4paper, top=12.7mm, bottom=25.4mm, left=19.1mm, right=19.1mm, footskip=8mm]{geometry}
+\usepackage[skip=7pt]{parskip}
+\usepackage[list=true, listformat=simple]{subcaption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+
+% Force footnotes not to split over pages
+\interfootnotelinepenalty=10000
+
+% Space after hline
+\newcommand{\myhline}{\hline\noalign{\vskip 2pt}}
+
+ % Increase spacing between rows of tables
+ \renewcommand{\arraystretch}{1.2}
+
+% Format links
+\hypersetup{
+	colorlinks=false,
+	linkbordercolor=black
+}
+
+
+\begin{document}
+
+\begin{center}
+	\huge Arctic Shores - Neurodiversity Filter  \\
+	\vspace{5mm}
+	\large Henry Ginn  \\
+	\vspace{3 mm}
+	\large \today
+\end{center}
+
+
+\input{Introduction.tex}
+\input{WhatIsArcticShoresPsychometricTest.tex}
+\input{ClaimsFromArcticShores.tex}
+\input{NeurodiversityFiltering.tex}
+\input{Conclusion.tex}
+
+\end{document}
